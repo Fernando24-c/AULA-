@@ -1,0 +1,26 @@
+body{
+    background: #3c4f75;
+    width: 1000%; 
+    height: 100%
+}
+.slogan{
+    text-align: left;
+    height: 500px; 
+    width: 150px ;
+    display: table;
+    float: left;
+    margin-right: 20px;
+    background-color: royalblue;
+    font-size: x-large; 
+    font-style: italic;
+}
+.formulario{
+    display: table; 
+    height: 500px; 
+    width: 250px; 
+    float: left;
+    background-color: #DAE3E5;
+    font-family: Kudeta, Haettenschweiler;
+    text-align: center;
+    font-size: x-large;
+}

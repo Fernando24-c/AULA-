@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="estilo/registro.css" type="text/css"/>
+        
+        <title>FASEE (Registro)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="imagenes/logoFaase (2).png">
+        <link rel="icon" type="image/png" href="imagenes/LOGO.png">
+    <script>
+        
+ 	function alerta(campo) { 
+		alert("Por favor, completa el campo "+campo) ;
+	}
+	function validar_formulario(form) {
+		if (form.nombre4.value === "") { //para dar un mensaje si est vacio el campo
+			alerta('\"Nombre\"'); form.nombre4.focus(); 
+                        return true; 
+		}
+                if (form.campo_contrasena_1.value === "") { //para dar un mensaje si est vacio el campo
+			alerta('\"contraseña\"'); form.nombre4.focus(); 
+                        return true; 
+		}
+                if (form.campo_contrasena_1.value === "") { //para dar un mensaje si est vacio el campo
+			alerta('\"repertir contraseña\"'); form.nombre4.focus(); 
+                        return true; 
+		}
+            
+                if (form.correo.value === "") { //para dar un mensaje si est vacio el campo
+			alerta('\"correo electronico\"'); form.nombre4.focus(); 
+                        return true; 
+                    }
+                        
+                if(form.campo_contrasena_2.value === form.campo_contrasena_1.value) { //este es para verificar la contraseña
+		}
+                else{
+			alert("La contrasena no coincide \n Intentalo de nuevo.");
+			form.campo_contrasena_2.value = ""; form.campo_contrasena_2.focus(); 
+			return true;
+                    }      			
+		form.submit(); //para verificar
+                alert("Todo está bien, da click en Alta"); 
+            }
+     
+    </script>   
+    </head>
+    <body>
+        <header>
+            Registro
+        </header>
+     <div>
+        
+        <br>
+        <br>
+        <br>
+        <div class="slogan">
+            <p><img src="imagenes/FAASE.png">"</p>
+            <p>FAASE</p>
+            <p>“Los mejores</p> 
+            <p>recuerdos</p> 
+            <p>empiezan</p>
+            <p>aquí”</p>
+        </div>
+        
+        
+        <div class="formulario">
+            
+            <form name="formulario_didesweb4" action="jsp/" method="post">
+                
+                <p>Completa el formulario</p>
+                <p>Nombre: </p>
+                <input type="text" name="nombre" id="nombre4"><br>
+                
+                <p>Apellido Paterno: </p>
+                <input type="text" name="apellidoP"><br>
+                
+                <p>Apellido Materno: </p>
+                <input type="text" name="apellidoM"><br>
+
+                <p>Contraseña: </p>
+                <input type="password" name="contrasenia" id="campo_contrasena_1"><br>
+                <p>Repetir contraseña: </p>
+                <input type="password" name="contrasena2" id="campo_contrasena_2" ><br>
+
+                 <p>Correo electrónico: </p>
+                 <input type="text" name="correo" id="correo"><br><br>
+
+                 <input type="button" value="Terminar" onClick="validar_formulario(this.form)"><br><br>
+                <input type="submit" name="alta" value="Alta">
+        </form>
+        </div>
+
+     </div>
+            
+    </body>
+</html>

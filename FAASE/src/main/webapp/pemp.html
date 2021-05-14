@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="imagenes/logoFaase (2).png">
+    <link rel="icon" type="image/png" href="logoFaase.png">
+    <title>TECILIZTLI</title>
+    <!--Esta es la estrucutura para las paginas-->
+    <style>
+
+
+        *{ 
+            /* Selector universal */
+            /* Se le da un estilo a toda la pagina/documento */
+
+            /* Margen Externo */
+            margin: 0px; 
+            /* Margen Interno */
+            padding: 0px;
+            /* Estilo de lista */
+            list-style: none;
+        }
+        header{
+            position: relative;
+
+            /* El valor que se le da a position es relativo */
+            margin: 20px auto;
+            /* Con margin auto, la caja/contenedor se posiciona al centro del documento */
+            /* margin: 0 0 ; Superior, lateral */
+            width: 1000px;
+            min-height: 120px;
+            background: #329092;
+        }
+        #logo{
+            position: absolute;
+            /* La posicion absoluta permite ubicar una caja interna dentro de una principal */
+            top: 30px;
+            left: 30px;
+            width: 200px;
+            height: 60px;
+            background: #1AD1BF;
+        }
+        .redes{
+            position: absolute;
+            width: 42px;
+            height: 42px;
+            background: #20FF00;
+            border-radius: 100%;
+        }
+        #icono1{
+            top: 42px;
+            right: 120px;
+        }
+        #icono2{
+            top: 42px;
+            right: 71px;
+        }
+        #icono3{
+            top: 42px;
+            right: 19px;
+        }
+        nav{
+            position: relative;
+            margin: auto;
+            width: 1000px;
+            height: 40px;
+            /* background: #aaa; */
+        }
+        .botones{
+                /* float hace flotar un listado de vertical a horizontal */
+                float: left;
+                width: 196px;
+                height: 48px;
+                margin: 0px 2px;
+                background: gray;
+        }
+        #top{
+            position: relative;
+            margin: 20px auto;
+            width: 1000px;
+            height: 192px;
+        }
+        #top ul{
+            width: 1010px;
+            height: 192px;
+        }
+        #top ul li{
+            /* Se utiliza el float para que quede de izq a derecha con left */
+            float: left; 
+            width: 326px;
+            height: 192px;
+            background: black;
+            /* Hacer el espacio entre cada caja  */
+            margin-right: 10px;
+        }
+        section{
+            position: relative;
+            margin: auto;
+            width: 1000px;
+            height: 453px;
+            background: #329092;
+        }
+        aside#izq{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 200px;
+            height: 453px;
+            background: #333;
+        }
+        article{
+            position: absolute;
+            left: 200px;
+            top: 0px;
+            width: 600px;
+            height: 453px;
+            background: #666;
+        }
+        aside#der{
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 200px;
+            height: 453px;
+            background: #333;
+        }
+        footer{
+            position: relative;
+            margin: 20px auto;
+            width: 1000px;
+            height: 70px;
+            background: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Inicia Cabecera -->
+    <header>
+        <div id="logo">TECILIZTLI</div>
+
+        <div id="icono1" class="redes"></div>
+        <div id="icono2" class="redes"></div>
+        <div id="icono3" class="redes"></div>
+    </header>
+    <!-- Cierra Cabecera -->
+    <!-- Inicia Barra de Navegacion -->
+    <nav>
+        <ul>
+            <li class="botones"></li>
+            <li class="botones"></li>
+            <li class="botones"></li>
+            <li class="botones"></li>
+            <li class="botones"></li>
+        </ul>
+    </nav>
+    <!-- Cierra Barra de Navegacion -->
+    <!-- Inicia parte Superior -->
+    <div id="top">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- Cierra parte Superior -->
+    <!-- Inicia Seccion -->
+    <section>
+    <aside id="izq"></aside>
+    <article></article>
+    <aside id="der"></aside>
+    </section>
+    <!-- Cierra Seccion -->
+    <!-- Inicia Pie de Pagina -->
+    <footer></footer>
+    <!-- Cierra Pie de Pagina -->
+</body>
+</html>

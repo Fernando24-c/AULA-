@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>Reservaciones</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="imagenes/LOGO.png">
+        <link rel="stylesheet" href="estilo/Teciliztli.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+        
+        <script>
+        
+ 	function alerta(campo) { 
+		alert("Por favor, completa el campo "+campo) ;
+	}
+	function validar_formulario(form) {
+		if (form.nombre4.value === "") { //para dar un mensaje si est vacio el campo
+			alerta('\"Hotel\"'); form.nombre4.focus(); 
+                        return true; 
+		}
+                if (form.campo_contrasena_1.value === "") { //para dar un mensaje si est vacio el campo
+			alerta('\"Habitaciones\"'); form.nombre4.focus(); 
+                        return true; 
+		}
+                if (form.campo_contrasena_1.value === "") { //para dar un mensaje si est vacio el campo
+			alerta('\"Tipo de Habitacion\"'); form.nombre4.focus(); 
+                        return true; 
+		}
+            
+                if (form.correo.value === "") { //para dar un mensaje si est vacio el campo
+			alerta('\"Fechas\"'); form.nombre4.focus(); 
+                        return true; 
+                    }
+                        
+                if(form.campo_contrasena_2.value === form.campo_contrasena_1.value) { //este es para verificar la contraseña
+		}
+                else{
+			alert("Los datos no coinciden \n Intentalo de nuevo.");
+			form.campo_contrasena_2.value = ""; form.campo_contrasena_2.focus(); 
+			return true;
+                    }      			
+		form.submit(); //para verificar
+                alert("Todo está bien, da click en Alta"); 
+            }
+     
+    </script>   
+    </head>
+    <body>
+        <!-- Inicia Cabecera -->
+    <header>
+        <div id="logo">TECILIZTLI</div>
+    </header>
+    <!-- Cierra Cabecera -->
+    <!-- Inicia Seccion -->
+    <section>
+        <article>
+            <h1>
+                Completa el formulario para hacer tu reservación
+            </h1>
+            <br>
+            <form name="formulario_didesweb4" action="jsp/reservaciones.jsp" method="post">
+                
+                <p>Completa el formulario</p>
+                <p>Destino: </p>
+                <input type="text" name="destino" id="nombre4"><br>
+                
+                <p>Nombre Hotel: </p>
+                <input type="text" name="nHotel"><br>
+                
+                <p>Numero de habitaciones: </p>
+                <input type="text" name="numHab"><br>
+
+                 <p>Tipo de habitacion: </p>
+                 <input type="text" name="tipo" id="correo"><br>
+
+                  <p>Fecha de Llegada: </p>
+                 <input type="text" name="inicio" id="correo"><br>
+                 
+                  <p>Fecha final: </p>
+                  <input type="text" name="fin" id="correo"><br>
+                 
+                 <input type="submit" name="alta" value="Alta">
+        </form>
+        </article>
+    </section>
+    <!-- Cierra Seccion -->
+    
+    
+    
+    
+    
+    <!-- Cierra Seccion -->
+    <!-- Inicia Pie de Pagina -->
+    <footer></footer>
+    <!-- Cierra Pie de Pagina -->
+    </body>
+</html>

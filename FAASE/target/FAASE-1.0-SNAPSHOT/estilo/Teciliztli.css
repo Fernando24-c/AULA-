@@ -1,0 +1,141 @@
+        *{ 
+            /* Selector universal */
+            /* Se le da un estilo a toda la pagina/documento */
+
+            /* Margen Externo */
+            margin: 0px; 
+            /* Margen Interno */
+            padding: 0px;
+            /* Estilo de lista */
+            list-style: none;
+            font-family: 'Oswald', sans-serif;
+        }
+        header{
+            position: relative;
+
+            /* El valor que se le da a position es relativo */
+            margin: 20px auto;
+            /* Con margin auto, la caja/contenedor se posiciona al centro del documento */
+            /* margin: 0 0 ; Superior, lateral */
+            width: 1000px;
+            min-height: 120px;
+            /*background: #329092;*/
+            /*background: cyan;*/
+            font-family: 'Oswald', sans-serif;
+            background: #ffff66;
+        }
+        #logo{
+            position: absolute;
+            /* La posicion absoluta permite ubicar una caja interna dentro de una principal */
+            top: 30px;
+            left: 30px;
+            width: 200px;
+            height: 60px;
+            /*background: #1AD1BF;*/
+            /*background:  #ff9933;*/ 
+            font-size: 40px;
+        }
+        .redes{
+            position: absolute;
+            width: 42px;
+            height: 42px;
+            /*background: #20FF00;*/
+            border-radius: 100%;
+            background: #ffff66;
+        }
+        #icono1{
+            top: 42px;
+            right: 120px;
+        }
+        #icono2{
+            top: 42px;
+            right: 71px;
+        }
+        #icono3{
+            top: 42px;
+            right: 19px;
+        }
+        nav{
+            position: relative;
+            margin: auto;
+            width: 1000px;
+            height: 40px;
+            background: whitesmoke
+        }
+        .botones{
+                /* float hace flotar un listado de vertical a horizontal */
+                float: left;
+                width: 196px;
+                height: 48px;
+                margin: 0px 2px;
+                background: sandybrown;
+                font-size: 30px;
+                
+        }
+        #top{
+            position: relative;
+            margin: 20px auto;
+            width: 1000px;
+            height: 192px;
+        }
+        #top ul{
+            width: 1010px;
+            height: 192px;
+        }
+        #top ul li{
+            /* Se utiliza el float para que quede de izq a derecha con left */
+            float: left; 
+            width: 326px;
+            height: 192px;
+            background: whitesmoke;
+            /* Hacer el espacio entre cada caja  */
+            margin-right: 10px;
+            align-content: center;
+        }
+        section{
+            position: relative;
+            margin: auto;
+            width: 1000px;
+            height: 453px;
+            background: #329092;
+             text-align: center;
+        }
+        aside#izq{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 200px;
+            height: 453px;
+            /*background: #333;*/
+            background: #66ccff;
+             text-align: center;
+        }
+        article{
+            position: absolute;
+            left: 200px;
+            top: 0px;
+            width: 600px;
+            height: 453px;
+            /*background: #666;*/
+            background: #0099ff;
+             text-align: center;
+        }
+        aside#der{
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 200px;
+            height: 453px;
+            /*background: #333;*/
+            background: #0033ff;
+             text-align: center;
+        }
+        footer{
+            position: relative;
+            margin: 20px auto;
+            width: 1000px;
+            height: 70px;
+            /*background: black;*/
+            background: #66cc00;
+            text-align: center;
+        }
